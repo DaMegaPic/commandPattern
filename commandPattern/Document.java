@@ -20,4 +20,10 @@ public class Document {
         this.lines.add(line);
         return "yes";
     }
+    public String write(String line){
+
+    }
+    public String save(){
+        
+    }
 }
