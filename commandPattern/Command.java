@@ -1,5 +1,5 @@
 package commandPattern;
 
-public class Command {
+public abstract class Command {
     
 }
