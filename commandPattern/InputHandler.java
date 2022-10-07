@@ -1,5 +1,5 @@
 package commandPattern;
 
-public class InputHandler{
-    
+public class InputHandler {
+
 }
