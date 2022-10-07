@@ -17,6 +17,7 @@ public class Document {
         return docStr;
     }
     public String append(String line){
-        
+        this.lines.add(line);
+        return "yes";
     }
 }
