@@ -1,9 +1,10 @@
 package commandPattern;
 
-public class ViewCommand {
+public class ViewCommand extends Command{
     private Document doc;
 
     public ViewCommand(Document doc){
+        super(doc);
         this.doc= doc;
     }
 

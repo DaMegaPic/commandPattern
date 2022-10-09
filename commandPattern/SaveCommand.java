@@ -1,9 +1,10 @@
 package commandPattern;
 
-public class SaveCommand {
+public class SaveCommand extends Command{
     private Document doc;
 
     public SaveCommand(Document doc){
+        super(doc);
         this.doc= doc;
     }
 
