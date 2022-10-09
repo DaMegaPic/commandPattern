@@ -8,6 +8,7 @@ public class Document {
     
     public Document(String fileName){
         this.fileName = fileName;
+        FileManipulator.readFile(fileName);
     }
     public String view(){
         String docStr = this.lines.get(0);
@@ -18,12 +19,18 @@ public class Document {
     }
     public String append(String line){
         this.lines.add(line);
-        return "yes";
+        return "The line has been appended to the document";
     }
     public String write(String line){
-
+        this.lines = null;
+        this.lines.add(line);
+        return "The line was written to the file";
     }
     public String save(){
-        
+        FileManipulator.writeFile(fileName, lines);
+        if (lines == null){
+            return "Sorry, we cannot save at this time.";
+        }
+        else return  "The file has been saved";
     }
 }
