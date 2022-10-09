@@ -8,9 +8,8 @@ public class InputHandler {
         commands.put("save", new SaveCommand(document));
         commands.put("view", new ViewCommand(document));
         commands.put("append", new AppendCommand(document));
-        commands.put("write",new WriteCommand(document))
+        commands.put("write",new WriteCommand(document));
             
-        
     }
 
     public void inputEntered(String data){
