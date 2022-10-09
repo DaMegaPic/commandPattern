@@ -7,6 +7,7 @@ public class SaveCommand extends Command{
      */
     public SaveCommand(Document doc){
         super(doc);
+        this.doc= doc;
     }
 
     public String execute(){

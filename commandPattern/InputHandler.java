@@ -5,15 +5,18 @@ public class InputHandler {
     private HashMap <String, Command> commands;
 
     public InputHandler(Document document ){
-        commands = new HashMap<>();
-        commands.put("save", SaveCommand);
-        commands.put("view", ViewCommand);
-        commands.put("save", AppendCommand);
-        commands.put("save", WriteCommand);
+        commands.put("save", new SaveCommand(document));
+        commands.put("view", new ViewCommand(document));
+        commands.put("append", new AppendCommand(document));
+        commands.put("write",new WriteCommand(document))
+            
+        
     }
 
     public void inputEntered(String data){
 
+        commands.get(data);
+       
     }
 
 }
