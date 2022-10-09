@@ -7,6 +7,7 @@ public class ViewCommand extends Command{
      */
     public ViewCommand(Document doc){
         super(doc);
+        this.doc= doc;
     }
 
     public String execute(){

@@ -9,6 +9,7 @@ public class AppendCommand extends Command{
      */
     public AppendCommand(Document doc){
         super(doc);
+        this.doc= doc;
     }
 
     public String execute(){
