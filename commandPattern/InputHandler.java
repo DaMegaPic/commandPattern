@@ -13,12 +13,7 @@ public class InputHandler {
     }
 
     public void inputEntered(String data){
-        for (int i = 1;i <= this.commands.size();i++){
-            if (Command == "view"){
-                ViewCommand.execute();
 
-            }
-    }
     }
 
 }
