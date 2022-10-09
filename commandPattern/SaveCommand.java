@@ -1,5 +1,8 @@
 package commandPattern;
-
+/**
+ * Save command class that saves properties and methods for the save command
+ * @auhor Trectodactyls
+ */
 public class SaveCommand extends Command{
     private Document doc;
     /**
@@ -10,6 +13,10 @@ public class SaveCommand extends Command{
         this.doc= doc;
     }
 
+    /**
+     * execute method that executes the save commeand
+     * @return the new saved document
+     */
     public String execute(){
         return doc.save();
         

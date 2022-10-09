@@ -1,5 +1,9 @@
 package commandPattern;
 
+/**
+ * View command class that saves properties and methods for the view command
+ * @auhor Trectodactyls
+ */
 public class ViewCommand extends Command{
     private Document doc;
      /**
@@ -10,7 +14,11 @@ public class ViewCommand extends Command{
         this.doc= doc;
     }
 
-    public String execute(){
+    /**
+     * execute method that execute the view command
+     * @return the document for the user to view
+     */
+    public String excute(){
        return doc.view();
         
     }
