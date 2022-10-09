@@ -1,15 +1,17 @@
 package commandPattern;
 import java.util.Scanner;
 
-public class WriteCommand {
+public class WriteCommand extends Command{
     private Document doc;
-
+    /**
+     * @param doc takes in the param of doc of type Document
+     */
     public WriteCommand(Document doc){
-        this.doc= doc;
+        super(doc);
     }
 
     public String execute(){
-        return execute();
+        return doc.write(null);
         
     } 
 }

@@ -1,14 +1,16 @@
 package commandPattern;
 
-public class SaveCommand {
+public class SaveCommand extends Command{
     private Document doc;
-
+    /**
+     * @param doc takes in the param of doc of type Document
+     */
     public SaveCommand(Document doc){
-        this.doc= doc;
+        super(doc);
     }
 
     public String execute(){
-        return execute();
+        return doc.save();
         
     }
     
