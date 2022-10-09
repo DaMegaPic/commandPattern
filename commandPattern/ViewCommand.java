@@ -9,7 +9,7 @@ public class ViewCommand extends Command{
         super(doc);
     }
 
-    public String execute(){
+    public String excute(){
        return doc.view();
         
     }
