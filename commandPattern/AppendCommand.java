@@ -21,7 +21,11 @@ public class AppendCommand extends Command{
      * @return the new appended document
      */
     public String execute(){
-        return doc.append(null);
+        Scanner keyboard = new Scanner(System.in);
+        System.out.println("Enter text");
+        String writestr=  keyboard.nextLine();
+        document.append(writestr);
+       return"The line has been appended to the document."; 
         
     }
     

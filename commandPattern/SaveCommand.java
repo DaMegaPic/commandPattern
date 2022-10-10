@@ -18,6 +18,7 @@ public class SaveCommand extends Command{
      * @return the new saved document
      */
     public String execute(){
+        System.out.println("The file has been saved.");
         return doc.save();
         
     }

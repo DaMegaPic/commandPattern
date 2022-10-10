@@ -20,7 +20,10 @@ public class WriteCommand extends Command {
      * @return the String that the user has written 
      */
     public String execute(){
-        return doc.write(null);
-        
+        Scanner keyboard = new Scanner(System.in);
+        System.out.println("Enter text");
+        String writestr=  keyboard.nextLine();
+        document.write(writestr);
+       return"The line was written to the file";        
     } 
 }

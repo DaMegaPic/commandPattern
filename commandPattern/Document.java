@@ -29,6 +29,8 @@ public class Document {
             docStr = docStr+this.lines.get(i);
         }
         return docStr;
+        /*FileManipulator.readFile(fileName);
+        return fileName; */
     }
 
     /**
@@ -47,7 +49,7 @@ public class Document {
      * @return String that tells the user that the method was successful
      */
     public String write(String line){
-        this.lines = null;
+        lines.clear();
         this.lines.add(line);
         return "The line was written to the file";
     }

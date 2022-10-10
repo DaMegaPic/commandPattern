@@ -26,6 +26,9 @@ public class InputHandler {
      */
     public void inputEntered(String data){
         commands.get(data);
+        if (commands.containsKey(data)){
+            commands.get(data).execute();
+        }
     }
 
 }
