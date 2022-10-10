@@ -24,13 +24,7 @@ public class Document {
      * @return String within the document
      */
     public String view(){
-        String docStr = this.lines.get(0);
-        for(int i = 1;i <= this.lines.size();i++){
-            docStr = docStr+this.lines.get(i);
-        }
-        return docStr;
-        /*FileManipulator.readFile(fileName);
-        return fileName; */
+        return fileName;
     }
 
     /**
